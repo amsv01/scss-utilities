@@ -1,0 +1,13 @@
+/*!
+ * Scss Unitlities
+ * Copyright Amin Mousavi
+ * @Author Amin Mousavi <tigmin@gmail.com> | +989151712141
+ */
+
+@function strip-units($number) {
+  @return $number / ($number * 0 + 1);
+}
+
+@function rem($value, $base: 16px){
+  @return unquote(strip-units($value) / strip-units($base) + 'rem');
+}

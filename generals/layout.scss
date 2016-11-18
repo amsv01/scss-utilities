@@ -1,0 +1,13 @@
+/*!
+ * Scss Unitlities
+ * Copyright Amin Mousavi
+ * @Author Amin Mousavi <tigmin@gmail.com> | +989151712141
+ */
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
